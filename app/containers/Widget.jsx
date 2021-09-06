@@ -43,7 +43,7 @@ export default class Widget extends React.Component {
 
       // use a foreach loop to access data from the individual posts (make sure every child has a unique key)
       posts.forEach(function(post) {
-            theList.push(<li key={post.id} data-test="testing"><a href={post["link"]}>{post['title'].rendered}</a></li>);
+            theList.push(<li key={post.id}><a href={post["link"]}>{post['title'].rendered}</a></li>);
             theList.push(<hr key={'hr-' + post.id}/>);
           });
         return theList;
