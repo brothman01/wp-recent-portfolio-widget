@@ -18,6 +18,15 @@ namespace Pangolin\WPR;
 class Plugin {
 
 	/**
+	 * The plugin version.
+	 *
+	 * @since    1.0.0
+	 *
+	 * @var      string
+	 */
+	protected $plugin_version = '1.0.0';
+
+	/**
 	 * The variable name is used as the text domain when internationalizing strings
 	 * of text. Its value should match the Text Domain file header in the main
 	 * plugin file.
